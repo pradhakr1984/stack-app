@@ -63,20 +63,24 @@ const tier1Modules: Module[] = [
     sections: [
       {
         type: 'lesson',
-        content: `Before money existed, people traded directly. If you had chickens and needed shoes, you had to find a shoemaker who wanted chickens. This is called **barter** - and it was exhausting.
+        content: `Here's something weird. A rare Messi soccer card can sell for hundreds of dollars. A common one is worth a dollar. The card is the same cardboard. So what's the difference?
 
-Money solved this. Instead of trading chickens for shoes, you sell the chickens for money, then use that money to buy shoes. The shoemaker doesn't need to want your chickens.
+**People agree it's worth more.** That's literally it.
 
-**Money is just an agreement.** A dollar bill is a piece of paper. It only has value because the U.S. government says it does, and because millions of people trust that. If that trust disappeared, the paper would be worthless.
+Money works the same way. A $20 bill is just paper. It only has value because the U.S. government says it does, and because everyone in the country agrees to use it. If people stopped trusting it tomorrow, that paper would be worthless.
 
-This has actually happened throughout history. In 1923, Germany's currency collapsed so badly that people needed wheelbarrows of cash to buy a loaf of bread. The paper didn't change - the trust did.
+**Why barter used to be a nightmare:**
+
+Before money, people traded things directly - this is called **barter**. If you had extra apples and needed new shoes, you had to find a shoemaker who happened to want apples. Not easy. Money solved this by becoming something everyone accepts, so you don't have to find someone with exactly what you need.
+
+Think about Roblox. **Robux** works as money inside Roblox because everyone playing agrees it has value. It doesn't exist in the real world - but millions of people trade real dollars for it because it works as a medium of exchange inside that game.
 
 **Where does money come from?**
 
-Most people think about earning money - getting paid for work. But here's what's interesting: your time and skills have value. When you mow a lawn, babysit, or eventually get a job, you're trading your time for money. The person paying you thinks your time is worth more to them than keeping that money.
+You can earn it by doing something valuable for someone else. When you help a neighbor with their lawn, do chores for an allowance, or eventually get a job - you're trading your time and effort for money. The cool part: as you get better at things (better skills, more knowledge), your time becomes worth more per hour.
 
-**Why this matters for you:**
-Your first dollars are the most important. Not because they're worth the most - they're not. But because the habits you build with small amounts of money are the same habits you'll have when the amounts get bigger.`,
+**Why this matters at your age:**
+The money habits you build right now - with small amounts - will be the same habits you have when the amounts get bigger. The best time to learn how money works is before the stakes are high.`,
       },
       {
         type: 'quiz',
@@ -89,7 +93,7 @@ Your first dollars are the most important. Not because they're worth the most - 
             'Because banks created it',
           ],
           correctIndex: 1,
-          explanation: "The U.S. went off the gold standard in 1971. A dollar has value because of collective trust - that's actually what makes all modern money work.",
+          explanation: "A dollar bill works because everyone using it agrees it has value - just like a Messi card is worth more than a common card because collectors agree it is. That shared trust is what makes money useful.",
         },
       },
       {
@@ -103,7 +107,7 @@ Your first dollars are the most important. Not because they're worth the most - 
             'Grass cuttings',
           ],
           correctIndex: 1,
-          explanation: "All income is fundamentally an exchange of your time and skills. This is why building skills that are worth more per hour is one of the most valuable things you can do.",
+          explanation: "All earning is really an exchange of time and skills for money. Here's the cool part: as you learn more and get better at things, each hour of your time becomes worth more.",
         },
       },
     ],
@@ -120,68 +124,69 @@ Your first dollars are the most important. Not because they're worth the most - 
     sections: [
       {
         type: 'lesson',
-        content: `Here's a question: Is a phone a need or a want?
+        content: `Quick quiz: Is a phone a need or a want?
 
-The honest answer is: it depends. A basic phone for safety and communication? Could be a need. The newest iPhone with every accessory? Almost certainly a want.
+Trick question. A basic phone you need for safety? **Need.** The newest iPhone with every case and accessory? **Want.**
 
-This is the tricky part about needs vs. wants. They're not always obvious.
+This is the most important money decision you'll make every single day - and most people never think about it.
 
-**Needs** are things you genuinely can't function without:
-- Food (basic nutrition, not fancy restaurants)
-- Shelter (a safe place to sleep)
-- Clothing (weather-appropriate, not fashion)
-- Healthcare
-- Transportation to work or school
+**Needs** are things you genuinely can't skip:
+- Food (not Chipotle every day - actual food)
+- A place to sleep
+- Clothes that fit the weather
+- Getting to school
 
-**Wants** are everything that makes life more comfortable, enjoyable, or interesting - and there's nothing wrong with wants. Life would be pretty miserable without them. But they need to come *after* the needs are covered.
+**Wants** are everything else. And here's the thing - wants aren't bad. Life would be boring without them. The question is whether you're *choosing* them or just *letting them happen.*
 
-**The sneaky wants:**
-The hardest ones aren't the obvious luxuries - they're the things that feel like needs but aren't:
-- The most expensive phone plan when a cheaper one would work
-- Brand name everything when store brand is identical
-- Eating out when you could cook
+**The sneaky middle:**
+Some things feel like needs but are actually upgraded wants:
+- You need a phone. You don't need the newest model with the biggest storage.
+- You need food. You don't need snacks from the school store every day.
+- You need shoes. You don't need $200 Jordans.
 
-**Why this matters:**
-Every dollar you spend on a want in your teenage years is a dollar that could be invested and worth $10-30 by the time you retire. That's not a reason to never enjoy anything. It's a reason to be *deliberate* about which wants you choose - and to make sure you're choosing them, not just letting them happen.`,
+There's nothing wrong with wants - as long as you're making a real decision about them, not just spending without thinking.
+
+**Why this actually matters right now:**
+A $10/week habit of impulse snacks and small purchases = $520 a year. If you saved and invested that instead, in 10 years it's worth $7,500. That's not a reason to never enjoy anything. It's a reason to enjoy the things that are actually worth it to you - and skip the ones that aren't.`,
       },
       {
         type: 'scenario',
         scenario: {
           type: 'scenario',
-          prompt: "You just got $200 for your birthday. What do you do?",
-          setup: "You have $200 cash, no immediate expenses. Here are your options:",
+          prompt: "You just got $50 for your birthday. What do you do?",
+          setup: "You have $50 cash. No immediate needs. Here are your real options:",
           choices: [
             {
               label: 'Save it all',
-              description: 'Put it in a savings account and leave it there',
-              outcome1yr: '$207 (3.5% savings rate). Not exciting, but it\'s still there.',
-              outcome10yr: '$282 with 3.5% annual interest. Not transformative, but a $82 bonus for doing nothing.',
+              description: 'Put it in a savings account, leave it alone',
+              outcome1yr: 'About $51.75 with interest. Not exciting - but it\'s still there, earning a little more.',
+              outcome10yr: 'Around $70. Your $50 grew by $20 just by sitting there doing nothing.',
               emoji: '🏦',
               xpBonus: 30,
             },
             {
-              label: 'Invest $150, keep $50',
-              description: 'Put most of it in an index fund, keep some for fun',
-              outcome1yr: 'Index fund: ~$163 (assumes 8% average). Plus you enjoyed $50.',
-              outcome10yr: 'Index fund grows to ~$324. Total value: ~$374 with the $50 you enjoyed.',
-              emoji: '📈',
+              label: 'Keep $15, save $35',
+              description: 'Enjoy a little now, save the rest',
+              outcome1yr: '$37.45 in savings + you had fun with $15. Best of both.',
+              outcome10yr: 'Savings grows to ~$49. You got to spend $15 AND ended up with nearly as much as you started.',
+              emoji: '🎮',
               xpBonus: 40,
             },
             {
               label: 'Spend it all',
-              description: 'You deserve it - buy what you want',
-              outcome1yr: '$0. You bought things that are now used or forgotten.',
-              outcome10yr: '$0, plus the opportunity cost. If invested at 8%, that $200 would be $432.',
+              description: 'You got it, you earned it, why not',
+              outcome1yr: '$0. Whatever you bought is probably used, lost, or forgotten.',
+              outcome10yr: '$0. And the $50 you spent could have been $70 in a savings account or $108 invested.',
               emoji: '🛍️',
               xpBonus: 0,
             },
             {
-              label: 'Buy crypto',
-              description: 'Put it all in a cryptocurrency',
-              outcome1yr: 'Could be $0. Could be $400. No one knows. Crypto can drop 80% in weeks.',
-              outcome10yr: 'Still no one knows. Bitcoin\'s best 10-year return was extraordinary. Its worst? Complete loss.',
+              label: 'Give it to a friend to "invest"',
+              description: 'Your friend says he knows a hot stock tip',
+              outcome1yr: 'This almost never works. Best case: $60. Real case: $30 or $0.',
+              outcome10yr: 'Taking advice from someone with no track record is just gambling with extra steps.',
               emoji: '🎰',
-              xpBonus: 5,
+              xpBonus: 0,
             },
           ],
         },
@@ -200,32 +205,35 @@ Every dollar you spend on a want in your teenage years is a dollar that could be
     sections: [
       {
         type: 'lesson',
-        content: `There's a simple rule that most adults wish someone had told them when they were your age:
+        content: `Here's a rule that almost every adult wishes they'd learned younger:
 
-**Pay yourself first.**
+**Save something first. Then spend the rest.**
 
-That means before you spend any money - before buying anything fun or even anything necessary - you set aside a percentage for saving. Most financial advisors say 10-20%. For a 12-year-old, even $5 per week counts.
+Before you buy anything - games, snacks, whatever - set a little aside. Even if it's just $5. Even if it's just $2. The amount matters way less than the habit.
 
-Why? Because of something called **compound interest** - which you'll learn in detail in the next module. For now, here's the short version:
+This is called **paying yourself first** - and it's the single most powerful money habit you can build.
 
-Money earns interest. That interest earns more interest. Over time, this creates a snowball effect that becomes genuinely life-changing if you start young.
+**Why it works:**
+
+Money in a savings account earns something called **interest** - basically, the bank pays you a small bonus just for keeping your money there. And here's the wild part: that interest earns MORE interest the next year. Over time, this snowballs.
 
 **The $10/week experiment:**
 
-Imagine you save $10 every week starting today. You don't spend it. You put it in an account that earns 7% per year (a reasonable long-term investment return).
+Imagine you save just $10 a week starting right now. You put it somewhere it earns 7% per year (an investment account - more on that in later levels).
 
-- At 10 years: ~$7,500
-- At 20 years: ~$27,000
-- At 30 years: ~$73,000
-- At 40 years: ~$170,000
+Here's what happens:
+- In **1 year**: $555
+- In **3 years**: $1,800
+- In **5 years**: $3,500
+- In **10 years**: $7,500
 
-From $10 per week. That's $520 per year. Most of that $170,000 is just... time.
+That last number: you put in $5,200 ($10 x 52 weeks x 10 years). You got back $7,500. **The extra $2,300 came from doing nothing - just waiting.**
 
-**What gets in the way:**
+The longer you wait to start, the less time the snowball has to roll. That's why starting now, even with tiny amounts, beats starting later with bigger amounts.
 
-The reason most people don't save isn't that they can't afford to. It's that saving feels like deprivation while spending feels good right now. Our brains are wired for the immediate reward.
+**The secret to actually doing it:**
 
-The trick is to make saving automatic. Pay yourself first. Set the money aside before you decide what to spend, not after.`,
+Most people fail at saving because they try to save "whatever's left over." There's never anything left over. Instead, save first. Move the money before you even think about spending. If you can't see it, you won't miss it.`,
       },
       {
         type: 'calculator',
@@ -259,32 +267,36 @@ The trick is to make saving automatic. Pay yourself first. Set the money aside b
     sections: [
       {
         type: 'lesson',
-        content: `Here's something many adults don't fully understand: when you put money in a bank, the bank doesn't just hold it for you. **The bank loans most of it out to other customers.**
+        content: `Here's something surprising: when you put money in a bank, the bank doesn't just keep it in a vault for you. **The bank loans most of it out to other people.** Then it charges those people interest on the loans - and gives a little bit of that back to you.
 
-That's why banks pay you interest - they're renting your money. And it's why there's always a small chance (though very rare in the U.S.) that if everyone tried to take their money out at once, the bank couldn't cover it. This is called a "bank run" - you've probably seen it in movies.
+That little bit is called **interest**. It's the bank paying you for letting it use your money.
 
-**Checking accounts:**
-- For everyday spending
-- Usually pays little or no interest
-- Money is instantly accessible
-- Often comes with a debit card
-- No penalties for moving money in and out
+**Two main types of accounts:**
 
-**Savings accounts:**
-- For money you're setting aside
-- Pays higher interest than checking (currently 4-5% at many online banks)
-- Usually fine to move money, but designed to encourage keeping it there
-- Best for your emergency fund and medium-term goals
+**Checking account** - this is your everyday money:
+- For buying things and paying for stuff
+- Usually earns very little or zero interest
+- Money is always available - you can spend it anytime
+- Comes with a debit card
 
-**The key number: APY (Annual Percentage Yield)**
-This is the actual interest rate you earn per year. Online banks often offer 4-5x higher rates than traditional big banks. The difference on $1,000:
-- Big bank savings: ~$1/year (0.1% APY)
-- Online bank savings: ~$40-50/year (4-5% APY)
+**Savings account** - this is your growing money:
+- For money you're setting aside and not spending
+- Pays you interest - sometimes a lot more than checking
+- Best place to keep savings you're building up
 
-Small on $1,000. Significant on $10,000. Very significant on $100,000.
+**Here's the part that matters:**
 
-**Are your deposits safe?**
-Yes - up to $250,000 per account is federally insured by the FDIC. If a bank fails, you get your money back. This insurance is why keeping money in a bank is safer than keeping it in cash at home (which can be stolen or destroyed).`,
+Not all banks pay the same interest. And the difference is bigger than you'd expect.
+
+If you keep $100 in a savings account:
+- At a big regular bank: earns about **$0.10 per year** (almost nothing)
+- At an online bank: earns about **$4-5 per year** (40x more!)
+
+On $100, that's still not huge. But this habit - finding accounts that pay you more - matters a LOT as your savings grow.
+
+**Is your money safe?**
+
+Yes. The U.S. government insures bank accounts up to $250,000. That means even if a bank has problems, you get your money back. Keeping money in a bank is way safer than keeping cash at home, where it can be lost or stolen.`,
       },
       {
         type: 'quiz',
@@ -399,40 +411,42 @@ You're not just losing the bet. You're losing what that money would have become.
     sections: [
       {
         type: 'lesson',
-        content: `Cryptocurrency is real technology with real use cases. It is also one of the most volatile asset classes that has ever existed. Both things are true.
+        content: `Cryptocurrency is real technology with genuine use cases. It is also one of the most volatile asset classes that has ever existed. Both things are true simultaneously.
 
-Here's what you need to understand before putting any money into it.
+Here's what the ads and influencers aren't telling you.
 
 **What crypto actually is:**
 
-At its core, cryptocurrency is a decentralized digital record-keeping system. Bitcoin was designed as a currency - a way to transfer value without banks. Ethereum was designed to run programmable contracts. Most other cryptocurrencies were designed to make their creators rich.
+Bitcoin was designed as a currency - a way to transfer value without banks. Ethereum was designed to run programmable contracts. Most of the thousands of other cryptocurrencies were designed primarily to make their founders rich.
 
 **The volatility math:**
 
-Bitcoin, the most established cryptocurrency, has dropped by more than 80% from its peak *four separate times* since 2011. Every time. This means:
-- $10,000 invested at the peak in 2021 → $1,600 at the bottom in 2022
-- Some altcoins (smaller cryptos) went to zero
+Bitcoin, the most established crypto, has dropped more than 80% from its peak *four separate times*. Every single time.
 
-An 80% drop requires a **400% gain just to get back to even.** If your $1,000 drops to $200, it needs to go from $200 to $1,000 - a 5x increase - just to recover.
+- Peak 2021: ~$69,000 per Bitcoin
+- Bottom 2022: ~$16,000 per Bitcoin
+- A $10,000 investment became ~$2,300
 
-**"But Bitcoin always came back":**
+An 80% drop requires a **400% gain just to break even.** If your $1,000 drops to $200, it needs to 5x just to recover.
 
-True - Bitcoin has recovered from every major crash. So far. But:
-1. Most individual cryptocurrencies that crashed did NOT recover
-2. Recovery took years - sometimes 3-4 years
-3. During those years, the money was locked in loss, doing nothing
+**"But Bitcoin always came back" - yes, but:**
+1. Bitcoin came back. Most individual altcoins didn't.
+2. Recovery took 3-4 years each time. That money did nothing for years.
+3. Past recovery doesn't guarantee future recovery.
 
-**The influencer problem:**
+**The TikTok problem:**
 
-Many crypto influencers were paid (often secretly) to promote specific coins. When prices crashed, they had already sold. This is called a "pump and dump" - drive up the price, sell at the peak, let everyone else hold the loss.
+Here's what happened with dozens of coins: A creator with millions of followers promotes it. Price spikes. They sell at the top. Their followers are left holding losses.
 
-**What a thoughtful approach looks like:**
+This is a "pump and dump" - illegal in stocks, but crypto regulations are still catching up. If someone with a big following is telling you to buy a specific coin, ask yourself: *why are they telling you this for free?*
 
-If you're going to invest in crypto, treat it like the speculation it is:
-- Only use money you could lose entirely
-- Stick to the most established coins (Bitcoin, Ethereum)
-- Never put more than 5-10% of your investable money into it
-- Don't check the price every hour - you will lose your mind
+**What a reasonable approach looks like:**
+
+If you're going to speculate on crypto at all:
+- Only use money you could lose completely - and be serious about that constraint
+- Stick to Bitcoin or Ethereum (most established, most likely to survive)
+- Cap it at 5-10% of investable money, maximum
+- Don't check the price daily - you will make emotional decisions you'll regret
 
 **The rest of your money?** Index funds. Every time.`,
       },
@@ -478,46 +492,49 @@ If you're going to invest in crypto, treat it like the speculation it is:
     sections: [
       {
         type: 'lesson',
-        content: `Here is a fact that sounds impossible until you do the math:
+        content: `Here's a number that sounds impossible until you run the math:
 
-**Two people invest $200 per month. One starts at 18, one starts at 28. By 65, the person who started at 18 has $500,000 more than the person who started at 28.**
+**Two people invest $200/month. One starts at 18. One starts at 28. By age 65, the person who started at 18 has $500,000 MORE - from the same monthly contribution.**
 
-Same monthly contribution. Same investment. The only difference is 10 years.
+Same amount of money. Same investments. Ten years earlier start.
 
-This is compound interest - the most powerful force in personal finance, and the one almost nobody teaches young people about until it's too late to fully benefit.
+This isn't a marketing pitch. It's compound interest - and it's the most powerful force in personal finance that almost nobody explains to you before it's too late to fully use it.
 
-**The math behind the magic:**
+**The math:**
 
-When your investment earns a return, that return gets added to your total. Next year's return is calculated on the larger number. This creates exponential growth - slow at first, then dramatic.
+$200/month, 8% average annual return:
+- Start at 18 → by 65: **$1,086,000**
+- Start at 28 → by 65: **$583,000**
+- **Difference: $503,000** - for starting one decade earlier
 
-$200/month at 8% average annual return:
-- Start at 18, stop contributing at 65 (47 years): **$1,086,000**
-- Start at 28, stop contributing at 65 (37 years): **$583,000**
-- Difference: **$503,000** - from just starting 10 years earlier
+**What to actually invest in:**
 
-**The S&P 500 index fund:**
+Forget stock-picking. Forget tips. Forget TikTok portfolio influencers.
 
-You don't need to pick stocks. You don't need a stockbroker. You need one thing: an index fund.
+An **S&P 500 index fund** automatically holds tiny pieces of the 500 largest U.S. companies. When the economy grows, you grow with it. Historical average: ~10% per year. After inflation: ~7-8%.
 
-An S&P 500 index fund holds tiny pieces of the 500 largest U.S. companies. When the U.S. economy does well, your fund does well. The historical average annual return of the S&P 500 is about 10% (roughly 7-8% after inflation).
+This is how most actually-wealthy people invest. Low fees. No decisions required. Time does the work.
 
-This is how most wealthy people actually invest. Not picking stocks. Not trading crypto. Not following tips. A low-cost index fund, automated contributions, time.
+The lowest-cost options (get these specifically):
+- Vanguard VOO (0.03% fee)
+- Fidelity FZROX (0% fee)
+- Schwab SCHB (0.03% fee)
 
-**Roth IRA: your most valuable account**
+**Your birthday present at 18: the Roth IRA**
 
-If you have any earned income (job, freelance, etc.), you can open a Roth IRA at 18. You contribute after-tax money, and it grows completely tax-free. When you withdraw at retirement, you pay zero taxes.
+The day you turn 18 and have any earned income (job, freelance, anything), you can open a Roth IRA. You contribute money you've already paid tax on. It grows completely tax-free. At retirement, you withdraw it - still tax-free.
 
-On $1 million in a Roth IRA, that zero-tax benefit could save you $200,000-300,000+ in taxes vs. a regular account.
+On $1 million in a Roth IRA, you save $200,000-300,000+ in taxes compared to a regular account. That's just from knowing this exists.
 
-You can open one at Fidelity, Vanguard, or Schwab. $0 minimum at some brokers. You can contribute up to $7,000/year (2024 limit).
+Open one at Fidelity, Vanguard, or Schwab. Takes 15 minutes. Contribute up to $7,000/year.
 
-**The get-rich-quick trap:**
+**The get-rich-quick trap never changes:**
 
-Every generation gets its version: penny stocks, day trading, multi-level marketing, crypto, sports betting, meme stocks. The promise is the same: fast money, easy money, life-changing returns.
+Each generation gets its version: penny stocks, day trading, MLM schemes, crypto, sports betting, meme stocks. Same promise every time - fast money, easy money.
 
-The reality: over any 10-year period, roughly 90% of individual stock pickers underperform a basic index fund. The people who made money on meme stocks mostly got lucky and don't talk about what they lost afterward.
+The reality: over any 10-year period, roughly 90% of individual stock-pickers underperform a basic index fund. The people who got rich on meme stocks were lucky and mostly don't talk about what they lost beforehand.
 
-Getting rich slowly isn't exciting. But it's the method that actually works.`,
+Getting rich slowly is unglamorous. It's also the only method that reliably works.`,
       },
       {
         type: 'calculator',
@@ -670,38 +687,40 @@ const tier2Modules: Module[] = [
     sections: [
       {
         type: 'lesson',
-        content: `Albert Einstein allegedly called compound interest "the eighth wonder of the world." Whether he said it or not, it's a useful way to think about it.
+        content: `Here's the deal with compound interest: your money earns money. And then that money earns money. And then *that* money earns money. It sounds slow at first. It isn't.
 
-**Simple interest vs. compound interest:**
+**Simple vs. compound - the difference:**
 
-*Simple interest* means you earn interest only on the original amount. If you put $1,000 in an account at 10% simple interest, you earn $100 every year. After 10 years: $2,000.
+Say you have $1,000 in an account earning 10% per year.
 
-*Compound interest* means you earn interest on your interest too. Same $1,000 at 10%:
-- Year 1: $1,100
-- Year 2: $1,210 (10% of $1,100)
-- Year 3: $1,331
-- Year 10: $2,594
+With *simple interest*, you earn $100 every year on just the original $1,000. After 10 years: $2,000.
 
-The difference seems small at first. But wait 30 years:
-- Simple interest: $4,000
-- Compound interest: $17,449
+With *compound interest*, year 2's interest is calculated on $1,100 (not $1,000). So you earn $110 instead of $100. Then $121. Then $133.
 
-**The Rule of 72:**
-Want to know how long it takes to double your money? Divide 72 by your interest rate.
-- 6% return: money doubles in 12 years (72 ÷ 6)
-- 8% return: money doubles in 9 years (72 ÷ 8)
-- 10% return: money doubles in 7.2 years (72 ÷ 10)
+Same starting point. Same rate. Just... letting the interest pile on itself.
 
-**Why starting young matters so much:**
+After 30 years with compound interest? **$17,449.** Not $4,000.
 
-$1,000 invested at 8% annual return:
-- Invested at age 10: worth $46,902 by age 65
-- Invested at age 20: worth $21,725 by age 65
-- Invested at age 30: worth $10,063 by age 65
+**The Rule of 72 - a shortcut worth memorizing:**
 
-The 10-year-old's $1,000 grows to $46,902.
-The 30-year-old's $1,000 grows to $10,063.
-Same amount. Same return. 20 years of head start = 4.7x more money.`,
+Want to know how fast your money doubles? Divide 72 by the interest rate.
+
+- 6% return: doubles in **12 years**
+- 8% return: doubles in **9 years**
+- 10% return: doubles in **7.2 years**
+
+A $500 in a savings account at 6% → $1,000 in 12 years. No extra deposits. Just wait.
+
+**Why age matters more than amount:**
+
+This is the part that blows most adults' minds when they learn it too late.
+
+$1,000 invested at 8%:
+- At age 12 → worth **$46,900** by age 65
+- At age 22 → worth **$21,700** by age 65
+- At age 32 → worth **$10,000** by age 65
+
+Same money. Same return. You just hit "start" earlier. The 12-year-old's $1,000 does 4.7x more work than the 32-year-old's. That's not a typo.`,
       },
       {
         type: 'calculator',
@@ -735,52 +754,50 @@ Same amount. Same return. 20 years of head start = 4.7x more money.`,
     sections: [
       {
         type: 'lesson',
-        content: `Most people don't have a budget. Of those who do, most abandon it within a month. The reason isn't willpower - it's that complicated systems require constant effort to maintain.
+        content: `Most people don't budget. Of those who try, most quit within a month - not because they lack willpower, but because complicated systems are annoying to maintain.
 
-The 50/30/20 rule is simple enough to actually use:
+The 50/30/20 rule is simple enough that you can actually use it:
 
-**50% - Needs**
-Everything you have to pay regardless of whether you want to:
-- Housing (rent, utilities)
-- Food (groceries, not restaurants)
-- Transportation (bus pass, gas, car payment if you have one)
-- Insurance
-- Minimum debt payments
+**50% - Needs:** Things you actually have to pay for
+- Food (real food, not Chipotle every day)
+- Getting to school
+- A phone plan if you pay for yours
 
-**30% - Wants**
-Everything that makes life enjoyable but isn't strictly necessary:
-- Eating out / food delivery
-- Entertainment (streaming, concerts, games)
-- Clothing beyond the basics
-- Hobbies
-- Travel
+**30% - Wants:** Things that make life good but aren't required
+- Games, apps, subscriptions
+- Eating out with friends
+- Clothes you want but don't need
+- Entertainment
 
-**20% - Savings and extra debt payoff**
-- Emergency fund (until you have 3-6 months of expenses)
-- Retirement accounts (Roth IRA, 401k)
-- Paying down debt faster than the minimum
-- Saving for a specific goal (car, down payment)
+**20% - Save it:** This is the one most people skip
+- Savings account
+- Saving toward something specific (AirPods, gaming setup, trip)
 
-**Applied to a $500/month allowance or part-time job:**
-- $250 for needs (lunch, transportation, phone plan if you pay it)
-- $150 for wants (clothes, entertainment, eating out)
-- $100 for savings (starts building the habit NOW)
+**What this looks like at your scale:**
 
-**Why the percentage matters more than the amount:**
-Someone earning $30,000 and saving 20% ($6,000/year) is better positioned than someone earning $80,000 and saving 5% ($4,000/year). The habit compounds just like the money does.`,
+Say you get $40/month in allowance or make $40/month from odd jobs. The rule says:
+- $20 for needs (lunch money, bus pass, etc.)
+- $12 for wants (games, food with friends)
+- **$8 to save**
+
+That $8 sounds small. But $8/month at 8% return = **$1,400 in 10 years.** You put in $960. You got back $1,400. The habit is worth more than the money.
+
+**The real insight:**
+
+The amounts don't matter as much as the ratio. Someone saving 20% of $500/month builds wealth. Someone spending 100% of $5,000/month doesn't. The percentage habit is what you're building now - it scales with your income later.`,
       },
       {
         type: 'quiz',
         quiz: {
-          question: "You earn $800/month from a part-time job. Using 50/30/20, how much should go to savings?",
+          question: "You get $60/month from allowance and chores. Using 50/30/20, how much should go to savings?",
           options: [
-            '$50',
-            '$100',
-            '$160',
-            '$200',
+            '$6',
+            '$12',
+            '$18',
+            '$30',
           ],
-          correctIndex: 2,
-          explanation: "20% of $800 = $160. That might feel like a lot when you're a teenager, but investing $160/month starting at 16 instead of 26 results in roughly double the retirement savings.",
+          correctIndex: 1,
+          explanation: "20% of $60 = $12/month. That's $144/year. Invested at 8% return, that's over $2,600 in 10 years - from $12/month. The amount seems tiny. The habit is priceless.",
         },
       },
     ],
@@ -797,14 +814,15 @@ Someone earning $30,000 and saving 20% ($6,000/year) is better positioned than s
     sections: [
       {
         type: 'lesson',
-        content: `Your credit score is a three-digit number between 300 and 850. It tells lenders how reliably you've repaid money you've borrowed in the past.
+        content: `Right now, your credit score doesn't exist. That's fine - it hasn't started yet.
 
-Here's why it matters before you think it should:
+But the moment you turn 18 and open your first credit account, it does. And what you do in the next 2-3 years shapes a number that will follow you for decades.
 
-- **Renting an apartment:** Landlords run credit checks. A bad score means you need a co-signer or a bigger deposit.
-- **Car loans:** The difference between a 680 and 780 credit score on a $25,000 car loan can be $3,000+ in total interest.
-- **Mortgages:** On a $400,000 mortgage, a bad credit score can cost $50,000-100,000+ in extra interest over 30 years.
-- **Jobs:** Some employers check credit for positions handling money.
+Your credit score is a three-digit number between 300 and 850. Lenders, landlords, and sometimes even employers use it to judge how reliable you are with money. Higher = better. Here's how it actually affects your life:
+
+- **Renting an apartment:** Bad score = landlord wants a bigger deposit or a co-signer.
+- **Car loan:** The difference between a decent score (680) and a great score (780) can mean $3,000+ more in interest on one car.
+- **Mortgage:** On a house someday, a bad score could cost you $50,000-100,000 in extra interest. Not a typo.
 
 **The five factors:**
 
@@ -927,13 +945,13 @@ const tier3Modules: Module[] = [
     sections: [
       {
         type: 'lesson',
-        content: `When most people think about "investing in stocks," they imagine someone glued to a screen watching tickers, buying and selling based on gut feelings and tips. This is actually one of the worst ways to invest.
+        content: `You're probably 2-3 years away from being able to open an investment account and start building real wealth. That makes this the perfect time to understand how it works - before the stakes are real.
 
-**What a stock is:**
+When most people picture "investing in stocks," they imagine a guy staring at flashing numbers on a screen, trading based on tips and gut feelings. That's one of the worst ways to invest, and it's not what this is about.
 
-When you buy a share of stock, you own a small piece of a company. If the company grows and becomes more valuable, your share is worth more. If you hold shares that pay dividends, you get a portion of the company's profits.
+**What a stock actually is:**
 
-Buying one share of Apple doesn't mean you can walk into a store and take things - but it does mean you benefit proportionally when Apple does well.
+When you buy a share of stock, you own a small piece of a company. If the company grows and becomes more valuable, your share is worth more. Owning one share of Apple doesn't mean you can walk into a store and take things - but you do benefit proportionally when Apple does well.
 
 **The problem with picking stocks:**
 
@@ -1120,20 +1138,28 @@ Prestige matters at the margins for a small number of fields (finance, consultin
     sections: [
       {
         type: 'lesson',
-        content: `The emergency fund is the most boring topic in personal finance. It is also the one that most changes how financial stress feels.
+        content: `This is the least exciting topic in this entire course. It is also the one that matters most the moment you start earning real money.
 
-**What an emergency fund is:**
-3-6 months of essential living expenses, in a high-yield savings account, that you do not touch except for genuine emergencies.
+The emergency fund is money you set aside and never touch - except for actual emergencies. Not "this concert would be amazing." Not "I really want these shoes." Car-broke-down emergencies. Job-loss emergencies. Medical-bill emergencies.
 
-Not "I really want this concert ticket" emergencies. Car broke down emergencies. Medical bill emergencies. Job loss emergencies.
+**Why it changes everything:**
 
-**Why it matters:**
+Without an emergency fund, every financial surprise becomes debt. Car breaks down: $1,200 on a credit card at 24% APR. Medical bill: payment plan at 18%. Lost job: credit card + stress + panic decisions.
 
-Without an emergency fund, every financial surprise becomes debt. Car breaks down: credit card debt at 24%. Medical bill: payment plan at 18%. Lost job: credit card debt + stress + bad decisions.
+With an emergency fund: car breaks down. You pay cash. Done.
 
-With an emergency fund: Car breaks down. You pay cash. Life goes on.
+The difference isn't just financial - it's how you feel. Financial stress is genuinely one of the leading causes of relationship problems and bad decision-making. The emergency fund doesn't just protect your bank account; it protects your ability to think straight.
 
-The difference isn't just financial - it's psychological. Financial stress is one of the leading causes of relationship problems, health problems, and poor decision-making. The emergency fund doesn't just protect your money; it protects your ability to think clearly.
+**The goal at your stage:**
+
+You probably don't have 3-6 months of expenses to set aside yet. That's fine. But the habit starts now:
+
+1. Get your first real job (even part-time)
+2. Before anything else - before fun spending, before investing - save $500
+3. Then $1,000
+4. Keep building from there
+
+By the time you're 18-20 and living more independently, you want this buffer in place *before* you need it, not scrambling to build it after something breaks.
 
 **How much:**
 - Starter goal: $1,000 (handles most minor emergencies)
@@ -1189,7 +1215,7 @@ export const tierInfo = {
   1: {
     label: 'Foundation',
     grades: 'Grades 5-6',
-    description: 'What money is, needs vs. wants, saving, and how banks work',
+    description: 'Got an allowance? Here\'s how it actually works - and how to make it grow.',
     color: 'emerald',
     bgClass: 'bg-emerald-50',
     borderClass: 'border-emerald-200',
@@ -1199,7 +1225,7 @@ export const tierInfo = {
   2: {
     label: 'Building Blocks',
     grades: 'Grades 7-8',
-    description: 'Compound interest, budgeting, credit scores, and types of debt',
+    description: 'The math trick worth more than any test grade - and what you need to know before you turn 18.',
     color: 'blue',
     bgClass: 'bg-blue-50',
     borderClass: 'border-blue-200',
@@ -1209,7 +1235,7 @@ export const tierInfo = {
   3: {
     label: 'Decisions',
     grades: 'Grades 9-10',
-    description: 'Investing, credit cards, student loans, and emergency funds',
+    description: 'Getting your first job soon. The financial decisions you\'re about to make - here\'s what to know first.',
     color: 'violet',
     bgClass: 'bg-violet-50',
     borderClass: 'border-violet-200',
@@ -1219,7 +1245,7 @@ export const tierInfo = {
   4: {
     label: 'Reality Check',
     grades: 'Grades 11-12',
-    description: 'The math behind sports betting, crypto speculation, and building wealth from nothing',
+    description: 'The math behind apps designed to take your money - and the playbook for building wealth without a head start.',
     color: 'orange',
     bgClass: 'bg-orange-50',
     borderClass: 'border-orange-200',

@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
                 <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Grades 5–6</p>
                 <h3 className="text-white text-lg font-bold leading-tight">Foundation</h3>
-                <p className="text-gray-500 text-xs mt-0.5">What money is, saving, how banks work</p>
+                <p className="text-gray-500 text-xs mt-0.5">Got an allowance? Here&apos;s how to actually grow it.</p>
               </div>
               <div className="text-right shrink-0">
                 <p className="text-yellow-400 text-xl font-bold leading-none">+200</p>
@@ -61,7 +61,7 @@ export default function Home() {
               href: '/learn/compound-interest',
               num: '02', grades: '7–8',
               title: 'Building Blocks',
-              desc: 'Compound interest · budgeting · credit',
+              desc: 'One math trick worth more than any test grade.',
               emoji: '📊',
               rarity: 'bg-blue-500',
               border: 'border-blue-500/20 hover:border-blue-400/40',
@@ -74,7 +74,7 @@ export default function Home() {
               href: '/learn/investing-basics',
               num: '03', grades: '9–10',
               title: 'Decisions',
-              desc: 'Stocks · index funds · credit cards',
+              desc: 'Getting your first job soon? Read this first.',
               emoji: '💹',
               rarity: 'bg-violet-500',
               border: 'border-violet-500/20 hover:border-violet-400/40',
@@ -87,7 +87,7 @@ export default function Home() {
               href: '/learn/sports-betting-math',
               num: '04', grades: '11–12',
               title: 'Reality Check',
-              desc: 'Betting math · crypto · wealth building',
+              desc: 'The math behind apps designed to take your money.',
               emoji: '⚡',
               rarity: 'bg-orange-500',
               border: 'border-orange-500/20 hover:border-orange-400/40',
