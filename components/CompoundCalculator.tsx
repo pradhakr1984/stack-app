@@ -3,8 +3,8 @@
 import { useState, useMemo } from 'react';
 
 export default function CompoundCalculator() {
-  const [monthlyContrib, setMonthlyContrib] = useState(100);
-  const [startAge, setStartAge] = useState(16);
+  const [monthlyContrib, setMonthlyContrib] = useState(10);
+  const [startAge, setStartAge] = useState(10);
   const [rate, setRate] = useState(8);
   const [endAge] = useState(65);
 
@@ -26,6 +26,15 @@ export default function CompoundCalculator() {
     return { fv, years };
   }, [monthlyContrib, startAge, rate]);
 
+  // Near-term milestone: what you'd have in 10 years
+  const milestoneResult = useMemo(() => {
+    const milestoneYears = 10;
+    const monthlyRate = rate / 100 / 12;
+    const months = milestoneYears * 12;
+    const fv = monthlyContrib * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
+    return { fv, targetAge: startAge + milestoneYears };
+  }, [monthlyContrib, startAge, rate]);
+
   const fmt = (n: number) =>
     n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M` : `$${Math.round(n).toLocaleString()}`;
   const pct = (part: number, total: number) => (total > 0 ? Math.round((part / total) * 100) : 0);
@@ -40,7 +49,7 @@ export default function CompoundCalculator() {
       <div className="grid gap-5 mb-5">
         <div>
           <div className="flex justify-between mb-1">
-            <label className="text-xs font-bold text-gray-400">Monthly contribution</label>
+            <label className="text-xs font-bold text-gray-400">Monthly savings</label>
             <span className="text-xs font-bold text-emerald-400">${monthlyContrib}/mo</span>
           </div>
           <input type="range" min={10} max={1000} step={10} value={monthlyContrib}
@@ -53,7 +62,7 @@ export default function CompoundCalculator() {
 
         <div>
           <div className="flex justify-between mb-1">
-            <label className="text-xs font-bold text-gray-400">Start investing at age</label>
+            <label className="text-xs font-bold text-gray-400">Start saving at age</label>
             <span className="text-xs font-bold text-emerald-400">{startAge} years old</span>
           </div>
           <input type="range" min={10} max={40} step={1} value={startAge}
@@ -66,7 +75,7 @@ export default function CompoundCalculator() {
 
         <div>
           <div className="flex justify-between mb-1">
-            <label className="text-xs font-bold text-gray-400">Annual return rate</label>
+            <label className="text-xs font-bold text-gray-400">Annual growth rate</label>
             <span className="text-xs font-bold text-emerald-400">{rate}%</span>
           </div>
           <input type="range" min={1} max={12} step={0.5} value={rate}
@@ -84,7 +93,16 @@ export default function CompoundCalculator() {
         <p className="text-emerald-400 text-xs mb-1">
           ${monthlyContrib}/mo from age {startAge} to 65 ({result.years} years):
         </p>
-        <div className="text-4xl font-bold text-white mb-4">{fmt(result.fv)}</div>
+        <div className="text-4xl font-bold text-white mb-2">{fmt(result.fv)}</div>
+
+        {/* Near-term milestone — makes it tangible for younger users */}
+        <div className="flex items-center gap-1.5 mb-4">
+          <span className="text-gray-600 text-xs">→</span>
+          <p className="text-gray-500 text-xs">
+            In 10 years (age {milestoneResult.targetAge}): <span className="text-gray-300 font-bold">{fmt(milestoneResult.fv)}</span>
+          </p>
+        </div>
+
         <div className="space-y-2">
           <div>
             <div className="flex justify-between text-[10px] text-gray-500 mb-1">
