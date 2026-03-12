@@ -13,32 +13,55 @@ export default function Home() {
       {/* Hero */}
       <section className="text-center space-y-6 pt-4">
         <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-sm font-semibold px-4 py-2 rounded-full">
-          <span>📚</span> Free for every student, forever
+          <span>🎮</span> 16 free lessons · Earn XP · No login needed
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight">
           Learn money.<br />
-          <span className="text-emerald-600">Build your future.</span>
+          <span className="text-emerald-600">Level up for real.</span>
         </h1>
 
         <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
-          My son couldn&apos;t get into his school&apos;s financial literacy class because of a
-          scheduling conflict. So I built this instead. It&apos;s for him, and for every student
-          who deserved this class.
+          The money class your school never taught you.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        {/* Grade picker */}
+        <div className="space-y-3">
+          <div className="grid grid-cols-2 gap-3 max-w-sm mx-auto">
+            <Link
+              href="/learn/what-is-money"
+              className="bg-emerald-500 text-white font-bold px-4 py-4 rounded-2xl hover:bg-emerald-600 transition-colors text-center shadow-sm"
+            >
+              🌱 Grades 5–6
+              <span className="block text-xs font-normal opacity-80 mt-0.5">What is money?</span>
+            </Link>
+            <Link
+              href="/learn/compound-interest"
+              className="bg-blue-500 text-white font-bold px-4 py-4 rounded-2xl hover:bg-blue-600 transition-colors text-center shadow-sm"
+            >
+              📊 Grades 7–8
+              <span className="block text-xs font-normal opacity-80 mt-0.5">How money grows</span>
+            </Link>
+            <Link
+              href="/learn/investing-basics"
+              className="bg-violet-500 text-white font-bold px-4 py-4 rounded-2xl hover:bg-violet-600 transition-colors text-center shadow-sm"
+            >
+              💹 Grades 9–10
+              <span className="block text-xs font-normal opacity-80 mt-0.5">Investing & credit</span>
+            </Link>
+            <Link
+              href="/learn/sports-betting-math"
+              className="bg-orange-500 text-white font-bold px-4 py-4 rounded-2xl hover:bg-orange-600 transition-colors text-center shadow-sm"
+            >
+              ⚡ Grades 11–12
+              <span className="block text-xs font-normal opacity-80 mt-0.5">The real math</span>
+            </Link>
+          </div>
           <Link
             href="/learn"
-            className="bg-gray-900 text-white font-bold px-8 py-4 rounded-2xl hover:bg-gray-700 transition-colors text-lg"
+            className="text-sm text-gray-400 hover:text-gray-700 underline underline-offset-2 block text-center"
           >
-            Start Learning - It&apos;s Free
-          </Link>
-          <Link
-            href="/learn#tier-4"
-            className="bg-orange-100 text-orange-800 font-bold px-8 py-4 rounded-2xl hover:bg-orange-200 transition-colors text-lg"
-          >
-            The Reality Check (Grades 11-12) 🎰
+            or browse all 16 lessons →
           </Link>
         </div>
 
@@ -50,31 +73,6 @@ export default function Home() {
               <div className="text-xs text-gray-500">{s.label}</div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Why this exists */}
-      <section className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Why this exists</h2>
-        <div className="space-y-4 text-gray-700 leading-relaxed">
-          <p>
-            Financial literacy should be a required class. In most schools, it isn&apos;t. And the gap
-            is showing up in ways that concern me: teenagers losing money on sports betting apps,
-            putting their savings into volatile crypto on a tip from an influencer, hoping to get
-            rich quick because they don&apos;t see another way out.
-          </p>
-          <p>
-            The math behind these things isn&apos;t complicated. It just isn&apos;t being taught.
-          </p>
-          <p>
-            Stack covers the fundamentals - what money is, how compound interest works, what an
-            index fund is - and the harder stuff: the actual expected value of a sports bet, why
-            the apps are designed the way they are, and what slow, boring wealth-building actually
-            looks like over 30 years.
-          </p>
-          <p className="text-gray-500 italic text-sm">
-            No ads. No login. No data collected. Just the curriculum.
-          </p>
         </div>
       </section>
 
@@ -121,22 +119,27 @@ export default function Home() {
       </section>
 
       {/* Interactive preview callout */}
-      <section className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 rounded-3xl p-8 text-center">
-        <div className="text-4xl mb-3">🎰</div>
-        <h2 className="text-xl font-bold text-gray-900 mb-3">
-          The sports betting math they hide from you
-        </h2>
-        <p className="text-gray-700 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
-          The house edge means the longer you play, the more certain your loss becomes. It&apos;s
-          not bad luck - it&apos;s math. Our betting simulator shows you exactly what happens to
-          your money over time.
-        </p>
-        <Link
-          href="/learn/sports-betting-math"
-          className="inline-block bg-orange-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-700 transition-colors"
-        >
-          See the math →
-        </Link>
+      <section className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 rounded-3xl p-6">
+        <div className="flex items-start gap-4">
+          <div className="text-3xl shrink-0">🎰</div>
+          <div className="flex-1">
+            <span className="text-xs font-bold text-orange-600 uppercase tracking-wide">Grades 11-12 · Reality Check</span>
+            <h2 className="text-lg font-bold text-gray-900 mt-1 mb-2">
+              The sports betting math they hide from you
+            </h2>
+            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              The house edge means the longer you play, the more certain your loss becomes. It&apos;s
+              not bad luck - it&apos;s math. Our betting simulator shows you exactly what happens to
+              your money over time.
+            </p>
+            <Link
+              href="/learn/sports-betting-math"
+              className="inline-block bg-orange-600 text-white font-bold px-4 py-2 rounded-xl hover:bg-orange-700 transition-colors text-sm"
+            >
+              See the math →
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* CTA */}

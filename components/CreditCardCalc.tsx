@@ -11,9 +11,9 @@ export default function CreditCardCalc() {
     const monthlyRate = apr / 100 / 12;
     const minPayment = Math.max(25, balance * 0.02); // typical min: 2% of balance
 
-    // Calculate months to payoff
+    // Calculate months to payoff — always returns an object
     const calcMonths = (pmt: number) => {
-      if (pmt <= balance * monthlyRate) return Infinity; // payment not covering interest
+      if (pmt <= balance * monthlyRate) return { months: Infinity, totalInterest: Infinity };
       let bal = balance;
       let months = 0;
       let totalInterest = 0;
@@ -114,13 +114,13 @@ export default function CreditCardCalc() {
             <div>
               <span className="text-xs text-gray-500">Time to pay off:</span>
               <div className="text-lg font-bold text-red-700">
-                {typeof result.minResult === 'object' ? formatMonths(result.minResult.months) : 'N/A'}
+                {result.minResult.months === Infinity ? 'Never' : formatMonths(result.minResult.months)}
               </div>
             </div>
             <div>
               <span className="text-xs text-gray-500">Total interest paid:</span>
               <div className="text-lg font-bold text-red-700">
-                {typeof result.minResult === 'object' ? fmt(result.minResult.totalInterest) : 'N/A'}
+                {result.minResult.totalInterest === Infinity ? 'Forever growing' : fmt(result.minResult.totalInterest)}
               </div>
             </div>
           </div>
@@ -134,31 +134,44 @@ export default function CreditCardCalc() {
             <div>
               <span className="text-xs text-gray-500">Time to pay off:</span>
               <div className="text-lg font-bold text-violet-700">
-                {typeof result.userResult === 'object' ? formatMonths(result.userResult.months) : 'Never'}
+                {result.userResult.months === Infinity ? 'Never' : formatMonths(result.userResult.months)}
               </div>
             </div>
             <div>
               <span className="text-xs text-gray-500">Total interest paid:</span>
               <div className="text-lg font-bold text-violet-700">
-                {typeof result.userResult === 'object' ? fmt(result.userResult.totalInterest) : 'N/A'}
+                {result.userResult.totalInterest === Infinity ? 'Forever growing' : fmt(result.userResult.totalInterest)}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {typeof result.minResult === 'object' && typeof result.userResult === 'object' && (
+      {result.userResult.months !== Infinity && (
         <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-sm">
           <p className="font-semibold text-emerald-800 mb-1">
             Paying {fmt(payment)} vs. the minimum saves you:
           </p>
-          <p className="text-emerald-700 text-lg font-black">
-            {fmt(result.minResult.totalInterest - result.userResult.totalInterest)} in interest
-          </p>
-          <p className="text-emerald-700 text-xs mt-1">
-            And pays it off{' '}
-            {formatMonths(result.minResult.months - result.userResult.months)} faster.
-          </p>
+          {result.minResult.months === Infinity ? (
+            <>
+              <p className="text-emerald-700 text-lg font-black">
+                {fmt(result.userResult.totalInterest)} in interest
+              </p>
+              <p className="text-emerald-700 text-xs mt-1">
+                Minimum payments never pay this off. You do.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-emerald-700 text-lg font-black">
+                {fmt(result.minResult.totalInterest - result.userResult.totalInterest)} in interest
+              </p>
+              <p className="text-emerald-700 text-xs mt-1">
+                And pays it off{' '}
+                {formatMonths(result.minResult.months - result.userResult.months)} faster.
+              </p>
+            </>
+          )}
         </div>
       )}
     </div>

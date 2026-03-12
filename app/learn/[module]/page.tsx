@@ -65,6 +65,7 @@ export default function ModulePage() {
     const lines = content.split('\n');
     const elements: React.ReactNode[] = [];
     let i = 0;
+    let k = 0; // independent key counter — never reuses values
 
     while (i < lines.length) {
       const line = lines[i];
@@ -72,12 +73,12 @@ export default function ModulePage() {
       if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
         const text = line.slice(2, -2);
         elements.push(
-          <h3 key={i} className="font-bold text-gray-900 text-base mt-5 mb-2">{text}</h3>
+          <h3 key={k++} className="font-bold text-gray-900 text-base mt-5 mb-2">{text}</h3>
         );
       } else if (line.startsWith('*') && line.endsWith('*') && !line.startsWith('**')) {
         const text = line.slice(1, -1);
         elements.push(
-          <p key={i} className="italic text-gray-600 text-sm my-1">{text}</p>
+          <p key={k++} className="italic text-gray-600 text-sm my-1">{text}</p>
         );
       } else if (line.startsWith('- ')) {
         const items: string[] = [];
@@ -86,15 +87,15 @@ export default function ModulePage() {
           i++;
         }
         elements.push(
-          <ul key={i} className="list-disc list-inside space-y-1 my-3 text-gray-700">
+          <ul key={k++} className="list-disc list-inside space-y-1 my-3 text-gray-700">
             {items.map((item, j) => {
               // handle bold inline
               const parts = item.split(/(\*\*[^*]+\*\*)/g);
               return (
                 <li key={j} className="text-sm">
-                  {parts.map((p, k) =>
+                  {parts.map((p, m) =>
                     p.startsWith('**') && p.endsWith('**') ? (
-                      <strong key={k}>{p.slice(2, -2)}</strong>
+                      <strong key={m}>{p.slice(2, -2)}</strong>
                     ) : (
                       p
                     )
@@ -115,7 +116,7 @@ export default function ModulePage() {
           i++;
         }
         elements.push(
-          <div key={i} className="overflow-x-auto my-4">
+          <div key={k++} className="overflow-x-auto my-4">
             <table className="text-sm w-full border-collapse">
               <thead>
                 <tr>
@@ -127,8 +128,8 @@ export default function ModulePage() {
               <tbody>
                 {rows.slice(1).map((row, j) => (
                   <tr key={j} className={j % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    {row.map((cell, k) => (
-                      <td key={k} className="border border-gray-200 px-3 py-2 text-gray-700">{cell}</td>
+                    {row.map((cell, m) => (
+                      <td key={m} className="border border-gray-200 px-3 py-2 text-gray-700">{cell}</td>
                     ))}
                   </tr>
                 ))}
@@ -138,12 +139,12 @@ export default function ModulePage() {
         );
         continue;
       } else if (line.trim() === '') {
-        elements.push(<div key={i} className="h-2" />);
+        elements.push(<div key={k++} className="h-2" />);
       } else {
         // Inline bold/italic
         const parts = line.split(/(\*\*[^*]+\*\*)/g);
         elements.push(
-          <p key={i} className="text-gray-700 text-sm leading-relaxed">
+          <p key={k++} className="text-gray-700 text-sm leading-relaxed">
             {parts.map((p, j) =>
               p.startsWith('**') && p.endsWith('**') ? (
                 <strong key={j} className="text-gray-900">{p.slice(2, -2)}</strong>
