@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Nunito } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import HeaderXP from '@/components/HeaderXP';
 
-const nunito = Nunito({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '800', '900'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -27,29 +27,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-[#F8F7F4] min-h-screen`}>
+      <body className={`${spaceGrotesk.className} bg-[#0F0F0F] min-h-screen`}>
         {/* Accent bar */}
         <div className="h-1 bg-gradient-to-r from-emerald-400 via-blue-400 to-violet-400" />
 
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
+        <header className="bg-[#141414] border-b border-gray-800 sticky top-0 z-40">
           <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <div className="bg-emerald-500 text-white text-sm font-black w-8 h-8 rounded-lg flex items-center justify-center">
+              <div className="bg-emerald-500 text-white text-sm font-bold w-8 h-8 rounded-lg flex items-center justify-center">
                 $
               </div>
-              <span className="font-black text-xl text-gray-900 tracking-tight">Stack</span>
+              <span className="font-bold text-xl text-white tracking-tight">Stack</span>
             </Link>
             <nav className="flex items-center gap-3">
               <HeaderXP />
               <Link
                 href="/learn"
-                className="text-sm font-semibold text-gray-500 hover:text-gray-900 transition-colors hidden sm:block"
+                className="text-sm font-medium text-gray-400 hover:text-white transition-colors hidden sm:block"
               >
                 All Lessons
               </Link>
               <Link
                 href="/learn"
-                className="bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-emerald-600 transition-colors"
+                className="bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-emerald-400 transition-colors"
               >
                 Play →
               </Link>
@@ -59,8 +59,8 @@ export default function RootLayout({
 
         <main className="max-w-4xl mx-auto px-4 py-8">{children}</main>
 
-        <footer className="border-t border-gray-200 mt-16 py-8">
-          <div className="max-w-4xl mx-auto px-4 text-center text-sm text-gray-400">
+        <footer className="border-t border-gray-800 mt-16 py-8">
+          <div className="max-w-4xl mx-auto px-4 text-center text-sm text-gray-600">
             <p>Stack is free. No ads. No login. No data collection.</p>
           </div>
         </footer>

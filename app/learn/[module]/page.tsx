@@ -73,12 +73,12 @@ export default function ModulePage() {
       if (line.startsWith('**') && line.endsWith('**') && line.length > 4) {
         const text = line.slice(2, -2);
         elements.push(
-          <h3 key={k++} className="font-bold text-gray-900 text-base mt-5 mb-2">{text}</h3>
+          <h3 key={k++} className="font-bold text-white text-base mt-5 mb-2">{text}</h3>
         );
       } else if (line.startsWith('*') && line.endsWith('*') && !line.startsWith('**')) {
         const text = line.slice(1, -1);
         elements.push(
-          <p key={k++} className="italic text-gray-600 text-sm my-1">{text}</p>
+          <p key={k++} className="italic text-gray-500 text-sm my-1">{text}</p>
         );
       } else if (line.startsWith('- ')) {
         const items: string[] = [];
@@ -87,7 +87,7 @@ export default function ModulePage() {
           i++;
         }
         elements.push(
-          <ul key={k++} className="list-disc list-inside space-y-1 my-3 text-gray-700">
+          <ul key={k++} className="list-disc list-inside space-y-1 my-3 text-gray-400">
             {items.map((item, j) => {
               // handle bold inline
               const parts = item.split(/(\*\*[^*]+\*\*)/g);
@@ -95,7 +95,7 @@ export default function ModulePage() {
                 <li key={j} className="text-sm">
                   {parts.map((p, m) =>
                     p.startsWith('**') && p.endsWith('**') ? (
-                      <strong key={m}>{p.slice(2, -2)}</strong>
+                      <strong key={m} className="text-gray-200">{p.slice(2, -2)}</strong>
                     ) : (
                       p
                     )
@@ -144,10 +144,10 @@ export default function ModulePage() {
         // Inline bold/italic
         const parts = line.split(/(\*\*[^*]+\*\*)/g);
         elements.push(
-          <p key={k++} className="text-gray-700 text-sm leading-relaxed">
+          <p key={k++} className="text-gray-400 text-sm leading-relaxed">
             {parts.map((p, j) =>
               p.startsWith('**') && p.endsWith('**') ? (
-                <strong key={j} className="text-gray-900">{p.slice(2, -2)}</strong>
+                <strong key={j} className="text-gray-200">{p.slice(2, -2)}</strong>
               ) : (
                 p
               )
@@ -161,44 +161,42 @@ export default function ModulePage() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
+    <div className="max-w-2xl mx-auto space-y-5">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-gray-500">
-        <Link href="/learn" className="hover:text-gray-800">All Lessons</Link>
-        <span>›</span>
-        <span className={`${info.badgeClass} text-xs font-bold px-2 py-0.5 rounded-full`}>
-          {info.label}
-        </span>
+      <div className="flex items-center gap-2 text-sm text-gray-600">
+        <Link href="/learn" className="hover:text-gray-300 transition-colors">All Missions</Link>
+        <span className="text-gray-700">›</span>
+        <span className="text-gray-400 text-xs font-bold uppercase tracking-wide">{info.label}</span>
       </div>
 
       {/* Module header */}
-      <div>
-        <div className="flex items-center gap-3 mb-2">
+      <div className="bg-[#141414] border border-gray-800 rounded-xl p-5">
+        <div className="flex items-center gap-3 mb-3">
           <span className="text-4xl">{mod.emoji}</span>
           <div>
-            <h1 className="text-2xl font-black text-gray-900">{mod.title}</h1>
+            <h1 className="text-xl font-bold text-white leading-tight">{mod.title}</h1>
             <p className="text-gray-500 text-sm">{mod.subtitle}</p>
           </div>
         </div>
-        <div className="flex items-center gap-3 text-sm text-gray-500">
-          <span>⏱ {mod.readTime}</span>
+        <div className="flex items-center gap-3 text-xs text-gray-600">
+          <span>{mod.readTime}</span>
           <span>·</span>
-          <span className="font-black text-yellow-600">+{mod.xp} XP</span>
+          <span className="font-bold text-yellow-500">+{mod.xp} XP</span>
           {isModuleComplete && (
             <>
               <span>·</span>
-              <span className="text-emerald-600 font-semibold">✓ Completed</span>
+              <span className="text-emerald-400 font-bold">✓ Completed</span>
             </>
           )}
         </div>
       </div>
 
       {/* Sections */}
-      <div className="space-y-2">
+      <div className="space-y-3">
         {mod.sections.map((section, idx) => {
           if (section.type === 'lesson' && section.content) {
             return (
-              <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+              <div key={idx} className="bg-[#141414] border border-gray-800 rounded-xl p-6">
                 <div className="prose-custom space-y-1">
                   {renderContent(section.content)}
                 </div>
@@ -235,26 +233,26 @@ export default function ModulePage() {
       </div>
 
       {/* Takeaway */}
-      <div className="bg-gray-900 text-white rounded-2xl p-6">
-        <p className="text-xs font-semibold text-gray-400 mb-2 uppercase tracking-wide">Key Takeaway</p>
-        <p className="font-bold text-lg leading-tight">{mod.takeaway}</p>
+      <div className="bg-[#141414] border border-gray-700 rounded-xl p-5">
+        <p className="text-[10px] font-bold text-gray-600 mb-2 uppercase tracking-[0.2em]">Key Takeaway</p>
+        <p className="font-bold text-white text-base leading-snug">{mod.takeaway}</p>
       </div>
 
       {/* Complete button */}
       {!isModuleComplete ? (
         <button
           onClick={handleCompleteModule}
-          className={`w-full py-5 rounded-2xl font-black text-white text-xl transition-all duration-150 hover:scale-[1.02] active:scale-95 shadow-md ${info.buttonClass}`}
+          className="w-full py-4 rounded-xl font-bold text-white text-base bg-emerald-600 hover:bg-emerald-500 active:scale-95 transition-all duration-150 border border-emerald-500"
         >
           ✅ Complete Mission · Earn {mod.xp} XP
         </button>
       ) : (
-        <div className="bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl p-6 text-center text-white shadow-lg">
-          <p className="text-5xl mb-2">🏆</p>
-          <p className="text-2xl font-black tracking-wide mb-1">MISSION COMPLETE!</p>
-          <p className="text-emerald-100 font-bold text-lg">+{mod.xp} XP EARNED</p>
-          <div className="mt-3 bg-white/20 rounded-xl px-4 py-2 inline-block">
-            <p className="font-black text-sm">{levelInfo.emoji} {levelInfo.level} · {totalXP} XP total</p>
+        <div className="bg-[#141414] border border-emerald-700 rounded-xl p-6 text-center">
+          <p className="text-4xl mb-2">🏆</p>
+          <p className="text-xl font-bold text-white tracking-wide mb-1">MISSION COMPLETE</p>
+          <p className="text-emerald-400 font-bold">+{mod.xp} XP EARNED</p>
+          <div className="mt-3 bg-emerald-500/10 border border-emerald-800 rounded-lg px-4 py-2 inline-block">
+            <p className="font-bold text-emerald-300 text-sm">{levelInfo.emoji} {levelInfo.level} · {totalXP} XP total</p>
           </div>
         </div>
       )}
@@ -263,21 +261,21 @@ export default function ModulePage() {
       {nextMod && (
         <Link
           href={`/learn/${nextMod.id}`}
-          className="flex items-center gap-4 bg-white border-2 border-emerald-200 rounded-2xl p-4 hover:shadow-md hover:border-emerald-400 transition-all duration-150"
+          className="group flex items-center gap-3 bg-[#141414] border border-gray-800 hover:border-emerald-700 rounded-xl p-4 transition-colors"
         >
-          <span className="text-3xl">{nextMod.emoji}</span>
-          <div>
-            <p className="text-xs text-emerald-600 font-black uppercase tracking-wide">Next Mission</p>
-            <p className="font-black text-gray-900">{nextMod.title}</p>
-            <p className="text-xs text-gray-500">{nextMod.readTime} · <span className="text-yellow-600 font-bold">+{nextMod.xp} XP</span></p>
+          <span className="text-2xl shrink-0">{nextMod.emoji}</span>
+          <div className="flex-1 min-w-0">
+            <p className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">Next Mission</p>
+            <p className="font-bold text-white text-sm">{nextMod.title}</p>
+            <p className="text-gray-600 text-xs mt-0.5">{nextMod.readTime} · <span className="text-yellow-500 font-bold">+{nextMod.xp} XP</span></p>
           </div>
-          <span className="ml-auto text-emerald-500 text-xl font-black">→</span>
+          <span className="text-gray-600 group-hover:text-emerald-400 transition-colors font-bold">→</span>
         </Link>
       )}
 
       {/* Back to all */}
       <div className="text-center">
-        <Link href="/learn" className="text-sm text-gray-500 hover:text-gray-800 underline underline-offset-2">
+        <Link href="/learn" className="text-sm text-gray-700 hover:text-gray-400 transition-colors">
           ← Back to all missions
         </Link>
       </div>
