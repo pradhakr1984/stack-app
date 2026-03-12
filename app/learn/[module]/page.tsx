@@ -183,7 +183,7 @@ export default function ModulePage() {
         <div className="flex items-center gap-3 text-sm text-gray-500">
           <span>⏱ {mod.readTime}</span>
           <span>·</span>
-          <span className="font-semibold text-yellow-600">+{mod.xp} XP on completion</span>
+          <span className="font-black text-yellow-600">+{mod.xp} XP</span>
           {isModuleComplete && (
             <>
               <span>·</span>
@@ -244,39 +244,41 @@ export default function ModulePage() {
       {!isModuleComplete ? (
         <button
           onClick={handleCompleteModule}
-          className={`w-full py-4 rounded-2xl font-bold text-white text-lg transition-colors ${info.buttonClass}`}
+          className={`w-full py-5 rounded-2xl font-black text-white text-xl transition-all duration-150 hover:scale-[1.02] active:scale-95 shadow-md ${info.buttonClass}`}
         >
-          Mark Complete & Earn {mod.xp} XP →
+          ✅ Complete Mission · Earn {mod.xp} XP
         </button>
       ) : (
-        <div className="bg-emerald-50 border border-emerald-300 rounded-2xl p-5 text-center">
-          <p className="text-2xl mb-1">🎉</p>
-          <p className="font-bold text-emerald-800">Lesson complete!</p>
-          <p className="text-emerald-600 text-sm">You earned {mod.xp} XP • Total: {totalXP} XP</p>
-          <p className="text-emerald-700 text-sm font-semibold mt-1">{levelInfo.emoji} {levelInfo.level}: {levelInfo.title}</p>
+        <div className="bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl p-6 text-center text-white shadow-lg">
+          <p className="text-5xl mb-2">🏆</p>
+          <p className="text-2xl font-black tracking-wide mb-1">MISSION COMPLETE!</p>
+          <p className="text-emerald-100 font-bold text-lg">+{mod.xp} XP EARNED</p>
+          <div className="mt-3 bg-white/20 rounded-xl px-4 py-2 inline-block">
+            <p className="font-black text-sm">{levelInfo.emoji} {levelInfo.level} · {totalXP} XP total</p>
+          </div>
         </div>
       )}
 
-      {/* Next lesson */}
+      {/* Next mission */}
       {nextMod && (
         <Link
           href={`/learn/${nextMod.id}`}
-          className="flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-4 hover:shadow-md transition-shadow"
+          className="flex items-center gap-4 bg-white border-2 border-emerald-200 rounded-2xl p-4 hover:shadow-md hover:border-emerald-400 transition-all duration-150"
         >
           <span className="text-3xl">{nextMod.emoji}</span>
           <div>
-            <p className="text-xs text-gray-400 font-medium">Next lesson</p>
-            <p className="font-bold text-gray-900">{nextMod.title}</p>
-            <p className="text-xs text-gray-500">{nextMod.readTime} · +{nextMod.xp} XP</p>
+            <p className="text-xs text-emerald-600 font-black uppercase tracking-wide">Next Mission</p>
+            <p className="font-black text-gray-900">{nextMod.title}</p>
+            <p className="text-xs text-gray-500">{nextMod.readTime} · <span className="text-yellow-600 font-bold">+{nextMod.xp} XP</span></p>
           </div>
-          <span className="ml-auto text-gray-400 text-xl">→</span>
+          <span className="ml-auto text-emerald-500 text-xl font-black">→</span>
         </Link>
       )}
 
       {/* Back to all */}
       <div className="text-center">
         <Link href="/learn" className="text-sm text-gray-500 hover:text-gray-800 underline underline-offset-2">
-          ← Back to all lessons
+          ← Back to all missions
         </Link>
       </div>
     </div>

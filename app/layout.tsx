@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
+import HeaderXP from '@/components/HeaderXP';
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -38,10 +39,11 @@ export default function RootLayout({
               </div>
               <span className="font-black text-xl text-gray-900 tracking-tight">Stack</span>
             </Link>
-            <nav className="flex items-center gap-4">
+            <nav className="flex items-center gap-3">
+              <HeaderXP />
               <Link
                 href="/learn"
-                className="text-sm font-semibold text-gray-500 hover:text-gray-900 transition-colors"
+                className="text-sm font-semibold text-gray-500 hover:text-gray-900 transition-colors hidden sm:block"
               >
                 All Lessons
               </Link>
@@ -49,7 +51,7 @@ export default function RootLayout({
                 href="/learn"
                 className="bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-emerald-600 transition-colors"
               >
-                Start Learning
+                Play →
               </Link>
             </nav>
           </div>
