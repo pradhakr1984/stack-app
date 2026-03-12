@@ -249,7 +249,7 @@ export default function Home() {
         <p className="text-gray-600 text-sm">No login. No email. Pick your level and go.</p>
         <Link
           href="/learn"
-          className="inline-block bg-white text-gray-900 font-bold px-6 py-3 rounded-md hover:bg-gray-100 transition-colors text-sm"
+          className="inline-block bg-emerald-500 text-white font-bold px-6 py-3 rounded-md hover:bg-emerald-400 transition-colors text-sm"
         >
           Browse All 16 Missions →
         </Link>
