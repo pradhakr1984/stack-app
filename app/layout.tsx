@@ -27,29 +27,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} bg-[#0F0F0F] min-h-screen`}>
-        {/* Accent bar */}
-        <div className="h-1 bg-gradient-to-r from-emerald-400 via-blue-400 to-violet-400" />
-
-        <header className="bg-[#141414] border-b border-gray-800 sticky top-0 z-40">
+      <body className={`${spaceGrotesk.className} bg-[#0D0F14] min-h-screen`}>
+        <header className="bg-[#131620] border-b border-white/5 sticky top-0 z-40">
           <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="bg-emerald-500 text-white text-sm font-bold w-8 h-8 rounded-lg flex items-center justify-center">
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="bg-emerald-400 text-gray-900 text-xs font-bold w-7 h-7 rounded-md flex items-center justify-center">
                 $
               </div>
-              <span className="font-bold text-xl text-white tracking-tight">Stack</span>
+              <span className="font-bold text-lg text-white tracking-tight">Stack</span>
             </Link>
             <nav className="flex items-center gap-3">
               <HeaderXP />
               <Link
                 href="/learn"
-                className="text-sm font-medium text-gray-400 hover:text-white transition-colors hidden sm:block"
+                className="text-sm font-medium text-gray-500 hover:text-white transition-colors hidden sm:block"
               >
-                All Lessons
+                All Missions
               </Link>
               <Link
                 href="/learn"
-                className="bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-emerald-400 transition-colors"
+                className="bg-emerald-400 text-gray-900 text-sm font-bold px-4 py-2 rounded-md hover:bg-emerald-300 transition-colors"
               >
                 Play →
               </Link>
@@ -59,9 +56,9 @@ export default function RootLayout({
 
         <main className="max-w-4xl mx-auto px-4 py-8">{children}</main>
 
-        <footer className="border-t border-gray-800 mt-16 py-8">
-          <div className="max-w-4xl mx-auto px-4 text-center text-sm text-gray-600">
-            <p>Stack is free. No ads. No login. No data collection.</p>
+        <footer className="border-t border-white/5 mt-16 py-8">
+          <div className="max-w-4xl mx-auto px-4 text-center text-xs text-gray-700">
+            Stack is free. No ads. No login. No data collection.
           </div>
         </footer>
       </body>
