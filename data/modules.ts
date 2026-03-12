@@ -63,24 +63,20 @@ const tier1Modules: Module[] = [
     sections: [
       {
         type: 'lesson',
-        content: `Here's something weird. A rare Messi soccer card can sell for hundreds of dollars. A common one is worth a dollar. The card is the same cardboard. So what's the difference?
+        content: `Here's something weird. A rare Messi soccer card sells for hundreds of dollars. A common one sells for a dollar. Same cardboard. So what's the difference?
 
 **People agree it's worth more.** That's literally it.
 
-Money works the same way. A $20 bill is just paper. It only has value because the U.S. government says it does, and because everyone in the country agrees to use it. If people stopped trusting it tomorrow, that paper would be worthless.
+Money works the same way. A $20 bill is just paper. It only has value because everyone agrees to use it. That shared agreement is what makes it work.
 
-**Why barter used to be a nightmare:**
+Think about Robux. It only has value inside Roblox because millions of players agree it does. Real people trade real dollars for it - because that agreement is real.
 
-Before money, people traded things directly - this is called **barter**. If you had extra apples and needed new shoes, you had to find a shoemaker who happened to want apples. Not easy. Money solved this by becoming something everyone accepts, so you don't have to find someone with exactly what you need.
+**Before money existed, trading was a nightmare:**
 
-Think about Roblox. **Robux** works as money inside Roblox because everyone playing agrees it has value. It doesn't exist in the real world - but millions of people trade real dollars for it because it works as a medium of exchange inside that game.
+If you had apples and needed shoes, you had to find a shoemaker who happened to want apples. **Barter** - trading things directly - only works if both people want exactly what the other has. Money solved that.
 
-**Where does money come from?**
-
-You can earn it by doing something valuable for someone else. When you help a neighbor with their lawn, do chores for an allowance, or eventually get a job - you're trading your time and effort for money. The cool part: as you get better at things (better skills, more knowledge), your time becomes worth more per hour.
-
-**Why this matters at your age:**
-The money habits you build right now - with small amounts - will be the same habits you have when the amounts get bigger. The best time to learn how money works is before the stakes are high.`,
+**How you earn it:**
+Every time someone pays you - for chores, mowing a lawn, or eventually a job - you're trading your time and effort for something everyone agrees has value. The better you get at things, the more your time is worth.`,
       },
       {
         type: 'quiz',
@@ -126,28 +122,21 @@ The money habits you build right now - with small amounts - will be the same hab
         type: 'lesson',
         content: `Quick quiz: Is a phone a need or a want?
 
-Trick question. A basic phone you need for safety? **Need.** The newest iPhone with every case and accessory? **Want.**
-
-This is the most important money decision you'll make every single day - and most people never think about it.
+Trick question. A basic phone for safety? **Need.** The newest iPhone with every case? **Want.**
 
 **Needs** are things you genuinely can't skip:
-- Food (not Chipotle every day - actual food)
+- Food (actual food, not the school store every day)
 - A place to sleep
 - Clothes that fit the weather
 - Getting to school
 
-**Wants** are everything else. And here's the thing - wants aren't bad. Life would be boring without them. The question is whether you're *choosing* them or just *letting them happen.*
+**Wants** are everything else. And wants aren't bad - life would be boring without them. The question is whether you're *choosing* them or just *letting them happen.*
 
-**The sneaky middle:**
 Some things feel like needs but are actually upgraded wants:
-- You need a phone. You don't need the newest model with the biggest storage.
-- You need food. You don't need snacks from the school store every day.
+- You need a phone. You don't need the newest model.
 - You need shoes. You don't need $200 Jordans.
 
-There's nothing wrong with wants - as long as you're making a real decision about them, not just spending without thinking.
-
-**Why this actually matters right now:**
-A $10/week habit of impulse snacks and small purchases = $520 a year. If you saved and invested that instead, in 10 years it's worth $7,500. That's not a reason to never enjoy anything. It's a reason to enjoy the things that are actually worth it to you - and skip the ones that aren't.`,
+**The real skill** isn't cutting out all wants. It's noticing when you're about to spend without thinking - and deciding on purpose instead.`,
       },
       {
         type: 'scenario',
@@ -205,35 +194,26 @@ A $10/week habit of impulse snacks and small purchases = $520 a year. If you sav
     sections: [
       {
         type: 'lesson',
-        content: `Here's a rule that almost every adult wishes they'd learned younger:
+        content: `Here's a rule almost every adult wishes they'd learned younger:
 
-**Save something first. Then spend the rest.**
+**Save something first. Then spend what's left.**
 
-Before you buy anything - games, snacks, whatever - set a little aside. Even if it's just $5. Even if it's just $2. The amount matters way less than the habit.
+Before you buy anything - games, snacks, whatever - set a little aside. Even $2. Even $5. The amount matters way less than the habit.
 
-This is called **paying yourself first** - and it's the single most powerful money habit you can build.
+This is called **paying yourself first.**
 
-**Why it works:**
+**Why it snowballs:**
 
-Money in a savings account earns something called **interest** - basically, the bank pays you a small bonus just for keeping your money there. And here's the wild part: that interest earns MORE interest the next year. Over time, this snowballs.
+Banks pay you a small bonus just for keeping money there. It's called **interest**. That interest then earns *more* interest next year. Over time, it adds up.
 
-**The $10/week experiment:**
+Save $10/week:
+- **1 year:** $555
+- **3 years:** $1,800
+- **5 years:** $3,500
 
-Imagine you save just $10 a week starting right now. You put it somewhere it earns 7% per year (an investment account - more on that in later levels).
+You put in $780 over 3 years. You got $1,800 back. The extra came from doing nothing but waiting.
 
-Here's what happens:
-- In **1 year**: $555
-- In **3 years**: $1,800
-- In **5 years**: $3,500
-- In **10 years**: $7,500
-
-That last number: you put in $5,200 ($10 x 52 weeks x 10 years). You got back $7,500. **The extra $2,300 came from doing nothing - just waiting.**
-
-The longer you wait to start, the less time the snowball has to roll. That's why starting now, even with tiny amounts, beats starting later with bigger amounts.
-
-**The secret to actually doing it:**
-
-Most people fail at saving because they try to save "whatever's left over." There's never anything left over. Instead, save first. Move the money before you even think about spending. If you can't see it, you won't miss it.`,
+**The trick:** Move the money before you think about spending it. If you can't see it, you won't miss it.`,
       },
       {
         type: 'calculator',
@@ -267,36 +247,25 @@ Most people fail at saving because they try to save "whatever's left over." Ther
     sections: [
       {
         type: 'lesson',
-        content: `Here's something surprising: when you put money in a bank, the bank doesn't just keep it in a vault for you. **The bank loans most of it out to other people.** Then it charges those people interest on the loans - and gives a little bit of that back to you.
+        content: `When you put money in a bank, the bank doesn't just keep it in a vault. **The bank loans most of it out to other people.** It charges those people interest - and gives a little bit back to you.
 
 That little bit is called **interest**. It's the bank paying you for letting it use your money.
 
-**Two main types of accounts:**
+**Two accounts you need to know:**
 
-**Checking account** - this is your everyday money:
-- For buying things and paying for stuff
-- Usually earns very little or zero interest
-- Money is always available - you can spend it anytime
-- Comes with a debit card
+**Checking** - your everyday money. Buy things, pay for stuff. Usually earns nothing.
 
-**Savings account** - this is your growing money:
-- For money you're setting aside and not spending
-- Pays you interest - sometimes a lot more than checking
-- Best place to keep savings you're building up
+**Savings** - your growing money. Set it aside and don't touch it. Earns interest.
 
-**Here's the part that matters:**
+**The part that actually matters:**
 
-Not all banks pay the same interest. And the difference is bigger than you'd expect.
+Keep $100 in savings for a year:
+- At a big regular bank: you earn **$0.10**
+- At an online bank: you earn **$4-5**
 
-If you keep $100 in a savings account:
-- At a big regular bank: earns about **$0.10 per year** (almost nothing)
-- At an online bank: earns about **$4-5 per year** (40x more!)
+Same $100. 40x more money just for choosing the right bank.
 
-On $100, that's still not huge. But this habit - finding accounts that pay you more - matters a LOT as your savings grow.
-
-**Is your money safe?**
-
-Yes. The U.S. government insures bank accounts up to $250,000. That means even if a bank has problems, you get your money back. Keeping money in a bank is way safer than keeping cash at home, where it can be lost or stolen.`,
+On small amounts the difference is tiny. But the habit of putting your savings where it earns more? That pays off big as the numbers grow.`,
       },
       {
         type: 'quiz',
@@ -874,37 +843,28 @@ You want to keep your **credit utilization** (amount used ÷ limit) below 30%. I
     sections: [
       {
         type: 'lesson',
-        content: `Debt has a bad reputation, but not all debt is the same. Understanding the difference is one of the most important money skills you can have.
+        content: `Not all debt is the same. Some debt is a tool. Some debt is a trap.
 
-**Good debt** is borrowing that:
-- Creates value or income that exceeds the cost of the debt
-- Has a low interest rate
-- Is for something that appreciates in value (goes up) or increases your earning power
+**Good debt** helps you get ahead:
+- Low interest rate
+- Used for something that grows in value or helps you earn more
+- Examples: a student loan that leads to a higher-paying job
 
-Examples:
-- *Mortgage at 6.5%:* You're buying an asset that historically appreciates. You'd be paying rent anyway - this builds equity.
-- *Student loans at 5% for a degree that increases your earnings by $20K/year:* The math works.
-- *Small business loan at 8% for a business earning 20% return:* The debt is paying for itself.
+**Bad debt** keeps you behind:
+- High interest rate
+- Used for stuff you already used up or that lost value
+- Examples:
+  - *Credit card at 24%:* Everything you don't pay off immediately costs 24% extra
+  - *Buy Now Pay Later for clothes or electronics:* You're paying interest on things that are worth nothing by the time you finish paying
+  - *Car loan for a car you can't afford:* Cars lose value fast - paying interest on top makes it worse
 
-**Bad debt** is borrowing that:
-- Finances consumption (things that are used up or lose value)
-- Has a high interest rate
-- Keeps you in a cycle of payments without building anything
+**The minimum payment trap:**
 
-Examples:
-- *Credit card at 24%:* The highest-return investment most years doesn't beat this rate. Everything you buy on a card that you don't pay off is costing 24% extra.
-- *Car loan for a car you can't afford:* Cars lose 20% of their value the day you drive off the lot. Paying 7% interest to finance a depreciating asset.
-- *Buy Now Pay Later for clothes/electronics:* Financing consumables is almost always bad math.
+$2,000 credit card balance at 24%:
+- Pay only the minimum ($40/month): takes 8+ years, costs $2,700 in interest
+- You end up paying more in interest than you originally borrowed
 
-**The credit card minimum payment trap:**
-
-$2,000 credit card balance at 24% APR:
-- Minimum payment each month: ~$40
-- Time to pay off at minimum: 8+ years
-- Total interest paid: ~$2,700+
-- You'll pay more in interest than the original balance
-
-See this for yourself:`,
+See the math yourself:`,
       },
       {
         type: 'calculator',
