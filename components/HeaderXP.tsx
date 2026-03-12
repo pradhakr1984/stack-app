@@ -27,12 +27,13 @@ export default function HeaderXP() {
     return () => window.removeEventListener('storage', onStorage);
   }, []);
 
-  if (xp === null) return null;
+  // Placeholder keeps nav layout stable while XP loads
+  if (xp === null) return <div className="w-16 h-7" />;
 
   return (
-    <div className="flex items-center gap-1.5 bg-yellow-50 border border-yellow-300 rounded-full px-3 py-1">
+    <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1">
       <span className="text-sm">{levelEmoji}</span>
-      <span className="text-xs font-black text-yellow-700">{xp} XP</span>
+      <span className="text-xs font-bold text-emerald-400">{xp} XP</span>
     </div>
   );
 }

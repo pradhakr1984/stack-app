@@ -46,7 +46,7 @@ export default function ScenarioBlock({ scenario, onXPEarned }: Props) {
               disabled={selected !== null}
               className={`
                 w-full text-left rounded-md border p-4 transition-all
-                ${selected === null ? 'border-white/10 hover:border-blue-500/40 hover:bg-blue-500/5 cursor-pointer' : ''}
+                ${selected === null ? 'border-white/10 hover:border-blue-500/40 hover:bg-blue-500/5 cursor-pointer' : 'cursor-not-allowed'}
                 ${isSelected ? 'border-blue-500/50 bg-blue-500/10' : ''}
                 ${isOther ? 'border-white/5 opacity-40' : ''}
               `}
@@ -92,7 +92,7 @@ export default function ScenarioBlock({ scenario, onXPEarned }: Props) {
       )}
 
       {selected === null && (
-        <p className="text-xs text-gray-700 text-center">Pick an option to see the outcome</p>
+        <p className="text-xs text-gray-500 text-center">Pick an option to see the outcome</p>
       )}
     </div>
   );

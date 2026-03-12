@@ -10,13 +10,24 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Stack - Free Financial Literacy for Students',
+  metadataBase: new URL('https://stack-app-lyart.vercel.app'),
+  title: {
+    default: 'Stack — Level Up Your Money Game',
+    template: '%s — Stack',
+  },
   description:
-    'Free, interactive financial literacy for grades 5-12. Learn money, budgeting, investing, and the real math behind sports betting and crypto.',
+    'Free, interactive financial literacy for grades 5–12. Learn money, budgeting, investing, and the real math behind sports betting and crypto. No login. No ads.',
   openGraph: {
-    title: 'Stack - Learn Money. Level Up For Real.',
-    description: 'Free financial literacy for students grades 5-12. No login. Works on any device.',
+    title: 'Stack — Level Up Your Money Game',
+    description: 'The financial skills they forgot to teach in school. Free. No login. 16 missions for grades 5–12.',
     type: 'website',
+    url: 'https://stack-app-lyart.vercel.app',
+    siteName: 'Stack',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stack — Level Up Your Money Game',
+    description: 'The financial skills they forgot to teach in school. Free. No login. 16 missions for grades 5–12.',
   },
 };
 

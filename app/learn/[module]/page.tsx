@@ -31,6 +31,14 @@ export default function ModulePage() {
     }
   }, [mod]);
 
+  // Set browser tab title per module
+  useEffect(() => {
+    if (mod) {
+      document.title = `${mod.title} — Stack`;
+      return () => { document.title = 'Stack'; };
+    }
+  }, [mod]);
+
   const handleXPEarned = useCallback((xp: number) => {
     setXpEarned((prev) => prev + xp);
   }, []);

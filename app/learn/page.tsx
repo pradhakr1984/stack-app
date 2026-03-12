@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 export default function LearnPage() {
   const [completedIds, setCompletedIds] = useState<string[]>([]);
-  const [totalXP, setTotalXP] = useState(0);
+  const [totalXP, setTotalXP] = useState<number | null>(null);
 
   useEffect(() => {
     const p = getProgress();
@@ -15,7 +15,7 @@ export default function LearnPage() {
     setTotalXP(p.totalXP);
   }, []);
 
-  const levelInfo = getLevelInfo(totalXP);
+  const levelInfo = getLevelInfo(totalXP ?? 0);
   const totalModules = Object.values(modulesByTier).flat().length;
 
   const tierAccent = ['border-emerald-800', 'border-blue-800', 'border-violet-800', 'border-orange-800'];
@@ -32,8 +32,8 @@ export default function LearnPage() {
         </p>
       </div>
 
-      {/* Progress if any completed */}
-      {completedIds.length > 0 && (
+      {/* Progress if any completed — only render once XP has loaded from localStorage */}
+      {totalXP !== null && completedIds.length > 0 && (
         <div className="bg-[#141414] border border-gray-800 rounded-xl p-5">
           <div className="flex items-center justify-between mb-3">
             <div>
